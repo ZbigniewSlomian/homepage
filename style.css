@@ -1,0 +1,20 @@
+body{
+    background-color: #f3f0f0;
+}
+
+h1 {
+    color: #1460AA;
+}
+h2{
+    color: #555555;
+}
+.header-1{
+    color: #14aa46;
+}
+.header-skroty{
+    color: #ee1b1b;
+    font-weight: bold;
+}
+#na-sktoty{
+    color: #6413a5; 
+}
