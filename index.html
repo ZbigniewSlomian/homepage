@@ -1,127 +1,208 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mój pierwszy dziennik ෴</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header id="top">
-        <nav>
-            <a href="index.html">Strona Główna</a>
-            <a href="nauka-html.html">Nauka Html</a>
-        </nav>
-
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--start" href="index.html"
+          >Strona Główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka Html</a>
+      </nav>
     </header>
 
-
     <main>
-        <header>
-            <h1 class="header-1">Dziennik leniwego programisty</h1>
-            <img src="kotek.jpg" alt="Kim jestem" />
-        </header>
+      <header>
+        <h1 class="header-1">Dziennik leniwego programisty</h1>
+        <img src="kotek.jpg" alt="Kim jestem" />
+      </header>
 
-        <section>
-            <h2>O czym mowa</h2>
-            <p>W kilku słowach opowiem co za inspiracja skłoniła mnie to popełnienia tego dzieła. Otóż zostałem
-                poproszony o notowanie swoich osiągnięć programistycznych zdobytych w czasie WTF.
-                Nie wiem kto wpadł na ten pomysł ale za mądry to on nie jest (ten pomysł) w odniesieniu do mojej osoby.
-                Zapewne jak będziesz - będziecie przeglądała - przeglądał - przeglądali ten kunszt programistyczny to
-                zapewne nie trudno będzie dostrzec braki w jego prowadzeniu. Jeśli zatem nie chcesz się denerwować radzę
-                jak najszybciej zamknąć tę stronę.
-                Jeśli jednak jesteś zdecydowany na zagłebienie się w otchłań chaosu to ostrzegam - robisz to na własną
-                odpowiedzialność</p>
+      <section>
+        <h2>O czym mowa</h2>
+        <p>
+          W kilku słowach opowiem co za inspiracja skłoniła mnie to popełnienia
+          tego dzieła. Otóż zostałem poproszony o notowanie swoich osiągnięć
+          programistycznych zdobytych w czasie WTF. Nie wiem kto wpadł na ten
+          pomysł ale za mądry to on nie jest (ten pomysł) w odniesieniu do mojej
+          osoby. Zapewne jak będziesz - będziecie przeglądała - przeglądał -
+          przeglądali ten kunszt programistyczny to zapewne nie trudno będzie
+          dostrzec braki w jego prowadzeniu. Jeśli zatem nie chcesz się
+          denerwować radzę jak najszybciej zamknąć tę stronę. Jeśli jednak
+          jesteś zdecydowany na zagłebienie się w otchłań chaosu to ostrzegam -
+          robisz to na własną odpowiedzialność
+        </p>
+      </section>
 
-        </section>
+      <section>
+        <h2 class="article-importent-title">Na skróty</h2>
+        <p>
+          <a href="#znaczniki"> <b>Znaczniki</b></a
+          ><br />
+        </p>
+      </section>
 
-        <section>
-            <h2 class="header-skroty">Na skróty</h2>
-            <p>
-                <a href="#znaczniki"> <b>Znaczniki</b></a><br>
+      <section>
+        <h2>Start ad 15 XII 2020</h2>
 
-            </p>
+        <h3 class="week">Tydzień 2</h3>
+        <article>
+          <h4 class="week__title">Początki samodzielnej pracy z HTML</h4>
+          <p class="week__notes">
+            Wszystko na filmie wyglądało super. Po tygodniu od obejrzenia
+            przyszedł czas na pierwszy projekt. I wielka czarna dziura pojawiła
+            się niczym obłok przemykający w otaczającej mnie atmosferze. Ale
+            spokojnie przejrzałem jeszcze raz interesujące mnie fragmenty i już
+            było lepiej.
+          </p>
 
-        </section>
+          <h4 class="week__title">Przyszła pora validator'a</h4>
+          <p class="week__notes">
+            Pan pikuś można by rzec - 1 warning. Znacznik h1 to znacznik
+            najwyższej wagi - zwykle jako tytuł.<br />
+            <a href="https://validator.w3.org/nu/#textarea"
+              >Link do validarora</a
+            >
+          </p>
+          <h4 class="week__title">Przyszła pora na css'a</h4>
+          <p class="week__notes week__notes--end-block">
+            Ale co to jest właściwie ten css? :) To warstwa głównie dla tych co
+            kochają piękno. Linijka kodu do zanotowania: &lt;link
+            href="style.css" rel= "stylesheet" type="text/css" &gt; Aby
+            wyświetlić znacznik jako zwykły text bez interpretowania go przez
+            przegądarkę użyłem &amp;lt; &amp;gt; co jest odpowiednikiem znaku
+            "&lt;" i "&gt;" Dla wyświetlenia & użyłem &amp;amp
+          </p>
+        </article>
+        <h3 class="week">Tydzień 3</h3>
+        <article>
+          <h4 class="week__title">css II dobieranie kolorów</h4>
+          <p class="week__notes">
+            <a href="https://coolors.co/f9dc5c-17c3b2-3f88c5-f26419-1b2021"
+              >Fajna strona do dobierania kolorów</a
+            >
+          </p>
+          <h4 class="week__title">HTML II znaczniki</h4>
+          <p class="week__notes week__notes--end-block" id="znaczniki">
+            Nauczyłem się kilka nowych znaczników:<br />
+            - br - nowa linia<br />
+            - b - Bold - pogrubienie<br />
+            - I italic - pochylenie<br />
+            - U podkreślenie<br />
+            - STRIKE - przekreślenie<br />
+            - BLINK - mrugająca czcionka<br />
+            - em - ironia<br />
+            - strong - podkreśla wysoką istotność i poważność frazy w nim
+            zawartej<br />
+            - a - linki zewnętrzne / łącza wewnątrz dokumentu np: &lt;a href=""
+            target="">opis łącza &lt;/a&gt;<br />
+            - id - atrybut - identyfikuje element np: &lt;section id=
+            "tydzień4"&gt;<br />
+            - img - obrazek o podanym adresie &lt;img src="" alt=""&gt;<br />
+          </p>
+        </article>
 
-        <section>
-            <h2>Start ad 15 XII 2020</h2>
+        <h3 class="week">Tydzień 4</h3>
+        <article>
+          <h4 class="week__title">Git</h4>
+          <p class="week__notes">
+            Nauczyłem się kilka nowych komend gia'a - git add . - dodaje
+            wszystkkie zmiany w plikach z katalogu <br />
+            - git commit -m "opis commita" - zatwierdzamy zmiany w plikach
+            <br />
+          </p>
+          <h4 class="week__title">GitHub</h4>
+          <p class="week__notes">git push - wysłanie zmian na serwer <br /></p>
 
-            <h3>Tydzień 2</h3>
-            <article>
-                <h4>Początki samodzielnej pracy z HTML</h4>
-                <p>Wszystko na filmie wyglądało super. Po tygodniu od obejrzenia przyszedł czas na pierwszy projekt. I
-                    wielka czarna dziura pojawiła się niczym obłok przemykający w otaczającej mnie atmosferze.
-                    Ale spokojnie przejrzałem jeszcze raz interesujące mnie fragmenty i już było lepiej.
-                </p>
+          <h4 class="week__title">CSS</h4>
+          <p class="week__notes">
+            Display: inline - wszystko w jednej lini nie reaguje na szerokość i
+            wysokość<br />
+            Display: block - wyświetlanie jedno pod drugim - reaguje na
+            szerokość i wysokość<br />
+            Display: inline-block jedno obok drukiego jak się zmieści - reaguje
+            na szerokość i wysokość<br />
+            max-width - maksymalna szerokość elementu - ale może być mniejsza
+            jeśli zwężamy stronę<br />
+            width: 600 px - element na 600 pikseli i jeśli zmniejszam stronę to
+            pojawia się scroll<br />
+            min-width - minimalna szerokość - tyle musi mieć element minimalnie
+            ale może mieć więcej jeśli strona na to pozwala<br />
+            overflow: hidden - odcina treści - te co wystają poza element<br />
+            overflow: auto - dodaje scrola nawet wewnątrz innego elementu aby
+            wyświetlić całą treść<br />
+            box-sizing: border-box - przełącza szerokość i wysokość z elementu
+            na cały box. Element automatycznie się zmniejsza marginesy nie są
+            wliczane do border-box'a <br />
+            position: relative względem tego elementu będą pozycjonowane
+            elementy wewnątrz - nie będą wychodziły z box'a<br />
+            position: absolute - otwiera parametry top, bottom, left i right<br />
+            position: fixed - zafiksowany - zostaje zakotwiczony i nie przesuwa
+            się jak skrolujemy stronę<br />
+            position: sticky - przesuwa się razem z elementem ale zostaje zawsze
+            widoczny<br />
+            z-index - im większy tym bliżej widza, układanie elementów na
+            "stosie 3d"<br />
+            float: opływanie (nie służy do budowania layoutów) może wyjść poza
+            element i wtedy stosuj clear lub overflow<br />
+            clear: left right, both, - powiększa pudełko żeby się float'y
+            zmieściły<br />
+            <br />
+            padding: wewnętrzny margines w elemencie<br />
+            <b>margin-left 10px auto</b> - wyśrodkowanie elementów z lewej i z
+            prawej strony, jeśli strona sie zmniejsza to margines też - aż do 0
+            Margines "10px" dotyczy każdej strony, auto działa tylko przy jednym
+            parametrze przy podaniu dwóch parametrów auto już nie działa<br />
+            Żeby działało wyśrodkowanie to trzeba zdefiniować szerokość
+            elementu<br />
+          </p>
 
-                <h4>Przyszła pora validator'a</h4>
-                <p>Pan pikuś można by rzec - 1 warning. Znacznik h1 to znacznik najwyższej wagi - zwykle jako tytuł.<br>
-                    <a href="https://validator.w3.org/nu/#textarea">Link do validarora</a>
-                </p>
-                <h4>Przyszła pora na css'a</h4>
-                <p>Ale co to jest właściwie ten css? :) To warstwa głównie dla tych co kochają piękno.
-                    Linijka kodu do zanotowania: &lt;link href="style.css" rel= "stylesheet" type="text/css" &gt;
-                    Aby wyświetlić znacznik jako zwykły text bez interpretowania go przez przegądarkę użyłem &amp;lt;
-                    &amp;gt;
-                    co jest odpowiednikiem znaku "&lt;" i "&gt;" Dla wyświetlenia & użyłem &amp;amp
-                </p>
-            </article>
-            <h3>Tydzień 3</h3>
-            <article>
-                <h4>css II dobieranie kolorów</h4>
-                <p>
-                    <a href="https://coolors.co/f9dc5c-17c3b2-3f88c5-f26419-1b2021">Fajna strona do dobierania
-                        kolorów</a>
+          <h4 class="week__title">JS</h4>
+          <p class="week__notes">
+            zmienne: LET CONST VAR typy proste w JS: string, number, boolean,
+            null - wartość celowo nie zdefiniowana, undefined- brak definicji
+            typeof sprawdza jakiego typu jest zmienna Ważny concept JS -
+            immutability - niemutowalność nie możemy zmieniać wartości - to co
+            zmieniamy to tylko połaczenia między nimi a zmiennymi
+          </p>
+          <h4 class="week__title">Pritter, Live serwer</h4>
+          <p class="week__notes">
+            formater kodu - wywołanie: ctrl + shift + p i wybieramy Format
+            document Live serwer - uruchamia serwer www na naszym kompie pod
+            adresem 192.168.2.n:5500 - sprawdziłem - działa z telefonu
+          </p>
+          <h4 class="week__title">BEM</h4>
+          <p class="week__notes">
+            Block__Element--Modifier Sprytne nazewnictwo klas - sposób na
+            okarnięcie specyficzności.<br />
+            Możemy zdefiniować dwie klasy dla jednego elementu np.:<br />
+            "week__notes" i "week__notes--end-block" Druga klasa w moim
+            przypadku modyfikowała jeden parametr klasy bez modyfikatora.<br />
+          </p>
+          <h4 class="week__title">DOM</h4>
+          <p class="week__notes">
+            DOM - skręcona strona na podstawie HTML'a. Źródło strony może być
+            uzupełnione przez JS. Strona jest tworzona na podstawie DOM a nie
+            źródła strony.
+          </p>
+          <h4 class="week__title">JS</h4>
+          <p class="week__notes week__notes--end-block week__notes--js">
+            
+            
+          </p>
+        </article>
 
-                </p>
-                <h4>HTML II znaczniki</h4>
-                <p id="znaczniki">
-                    Nauczyłem się kilka nowych znaczników:<br>
-                    - br - nowa linia<br>
-                    - b - Bold - pogrubienie<br>
-                    - I italic - pochylenie<br>
-                    - U podkreślenie<br>
-                    - STRIKE - przekreślenie<br>
-                    - BLINK - mrugająca czcionka<br>
-                    - em - ironia<br>
-                    - strong - podkreśla wysoką istotność i poważność frazy w nim zawartej<br>
-                    - a - linki zewnętrzne / łącza wewnątrz dokumentu np: &lt;a href="" target="">opis łącza
-                    &lt;/a&gt;<br>
-                    - id - atrybut - identyfikuje element np: &lt;section id= "tydzień4"&gt;<br>
-                    - img - obrazek o podanym adresie &lt;img src="" alt=""&gt;<br>
-                </p>
-            </article>
-
-            <h3>Tydzień 4</h3>
-            <article>
-                <h4>Git</h4>
-                <p>Nauczyłem się kilka nowych komend gia'a
-                 - git add .  - dodaje wszystkkie pliki z katalogu <br>
-                 - git commit -m "tu opis commita" robiąc zmiany w plikach wywołujemy commit -m <br> 
-                </p>
-                <h4>GitHub</h4>
-                <p>
-                  
-                </p>
-            </article>
-
-            <h2>THE END </h2>
-        </section>
-
-
+        <h2 class="article-importent-title">THE END</h2>
+      </section>
     </main>
     <footer>
-        Strona testowa do nauki HTML'a <a href="#top">Przejdz na górę strony</a>
-
+      Strona testowa do nauki HTML'a <a href="#top">Przejdz na górę strony</a>
     </footer>
-    <script src="main.js">
-
-    </script>
-
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
